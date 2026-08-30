@@ -1,5 +1,5 @@
-HTML
-<!DOCTYPE html>
+
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -26,17 +26,32 @@ HTML
         header {
             background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%);
             color: white;
-            padding: 4rem 2rem;
+            padding: 3rem 2rem;
             text-align: center;
         }
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            margin-bottom: 15px;
+        }
         header h1 {
-            margin: 0 0 10px 0;
-            font-size: 2.2rem;
+            margin: 0 0 8px 0;
+            font-size: 2rem;
             font-weight: 700;
         }
         header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
+            font-size: 1.05rem;
+            opacity: 0.95;
             max-width: 700px;
             margin: 0 auto;
         }
@@ -128,6 +143,9 @@ HTML
 <body>
 
     <header>
+        <div class="profile-container">
+            <img src="Cris (1).JPG" alt="Cristian Alejandro Saldarriaga" class="profile-img">
+        </div>
         <h1>Cristian Alejandro Saldarriaga Gómez</h1>
         <p>Account Executive & Customer Success Manager | Expert in SaaS B2B, WhatsApp API & CRM</p>
     </header>
@@ -136,8 +154,8 @@ HTML
         <!-- Sobre Mí -->
         <div class="card">
             <h2>Sobre mí y mi enfoque</h2>
-            <p>Gran parte de mi sólida base técnica, comercial y de gestión estratégica la consolidé durante mis <strong>3 años y 9 meses de trayectoria en la plataforma SaaS Whaticket</strong>. Desde este rol, lideré y acompañé el ciclo comercial de punta a punta impulsando a empresas en toda <strong>Latinoamérica (LATAM)</strong> y con un fuerte enfoque en el mercado de <strong>España y Europa</strong>: desde la prospección estratégica, la calificación rigurosa y el <em>discovery</em> de necesidades, hasta la gestión avanzada de oportunidades, demostraciones de producto orientadas al valor, negociación y cierre.</p>
-            <p>Combino un profundo conocimiento en ecosistemas SaaS B2B, soluciones de WhatsApp Business API, automatización y comunicación omnicanal, utilizando herramientas clave como <strong>HubSpot</strong> y <strong>Freshsales</strong> para una gestión de <em>pipeline</em> limpia y predecible. Mi experiencia incluye haber gestionado carteras de 40 a 50 leads diarios, convirtiendo de manera constante entre 29 y 30 clientes mensuales y asegurando la retención mediante <em>Customer Success</em> proactivo.</p>
+            <p>Toda mi trayectoria comercial la he consolidado en la plataforma multiagente <strong>Whaticket</strong>, una robusta empresa SaaS donde lideré y acompañé el ciclo comercial de punta a punta: desde la prospección estratégica, la calificación rigurosa y el <em>discovery</em> de necesidades, hasta la gestión avanzada de oportunidades, demostraciones de producto orientadas al valor, negociación y cierre.</p>
+            <p>Combino una sólida base técnica y comercial en ecosistemas SaaS B2B, soluciones de WhatsApp Business API, automatización y comunicación omnicanal, utilizando herramientas clave como <strong>HubSpot</strong> y <strong>Freshsales</strong> para una gestión de <em>pipeline</em> limpia y predecible. Mi experiencia incluye haber gestionado carteras de 40 a 50 leads diarios, convirtiendo de manera constante entre 29 y 30 clientes mensuales como anuales y asegurando la retención mediante <em>Customer Success</em> proactivo.</p>
             <blockquote>"Más que cerrar una venta, mi objetivo es generar conversaciones genuinas, construir puentes de confianza y transformar cada desafío tecnológico en resultados de negocio duraderos."</blockquote>
         </div>
 
@@ -146,7 +164,7 @@ HTML
             <h2>Proyectos Destacados (Whaticket)</h2>
             <div class="project-item">
                 <h3>Inbound y Prospección Comercial</h3>
-                <p>Gestión integral de leads mediante Freshsales y HubSpot, identificando oportunidades con alto potencial de compra y acompañando al cliente con asesoría consultiva hasta el cierre en mercados internacionales.</p>
+                <p>Gestión integral de leads mediante Freshsales y HubSpot, identificando oportunidades con alto potencial de compra y acompañando al cliente con asesoría consultiva hasta el cierre.</p>
             </div>
             <div class="project-item">
                 <h3>Proyecto Wabot IA – Automatización Comercial</h3>
@@ -154,7 +172,7 @@ HTML
             </div>
             <div class="project-item">
                 <h3>Proyecto de Videos Tutoriales</h3>
-                <p>Creación de contenidos y videotutoriales prácticos sobre las principales funcionalidades de la plataforma, facilitando la curva de aprendizaje de los clientes, agilizando configuraciones y optimizando su experiencia de <em>onboarding</em>.</p>
+                <p>Creación de contenidos y videotutoriales prácticos sobre las principales funcionalidades de la plataforma, facilitando la curva de aprendizaje de los clientes y optimizando su experiencia de <em>onboarding</em>.</p>
             </div>
         </div>
 
@@ -163,22 +181,22 @@ HTML
             <h2>Especialidades</h2>
             <div class="skills-grid">
                 <span class="skill-tag">Ventas B2B & SaaS</span>
-                <span class="skill-tag">Estrategia LATAM & España/Europa</span>
+                <span class="skill-tag">Estrategia LATAM</span>
                 <span class="skill-tag">Account Executive & SDR</span>
                 <span class="skill-tag">Discovery & Consultative Selling</span>
-                <span class="skill-tag">Pipeline Management</span>
+                <span class="skill-tag">Pipeline Management & Forecast</span>
                 <span class="skill-tag">WhatsApp Business API</span>
                 <span class="skill-tag">HubSpot & Freshsales</span>
                 <span class="skill-tag">Kommo CRM</span>
                 <span class="skill-tag">Automatización de Procesos</span>
-                <span class="skill-tag">Onboarding & Churn Reduction</span>
+                <span class="skill-tag">Onboarding y Reducción de Churn</span>
             </div>
         </div>
 
         <!-- Contacto -->
         <div class="card" style="text-align: center;">
             <h2>Contacto Directo</h2>
-            <p style="text-align: center;">¿Quieres conectar, explorar oportunidades comerciales o conversar sobre proyectos en tecnología y ventas? ¡Escríbeme!</p>
+            <p style="text-align: center;">¿Quieres conectar, explorar oportunidades comerciales o conversar sobre proyectos en tecnología y ventas? ¡Escríbeme o conéctate conmigo!</p>
             <div class="social-buttons">
                 <a href="https://wa.me/5513991298778" class="btn" target="_blank">WhatsApp</a>
                 <a href="https://www.linkedin.com/in/cristian-alejandro-saldarriaga-gomez-a158912b1/" class="btn" target="_blank">LinkedIn</a>
