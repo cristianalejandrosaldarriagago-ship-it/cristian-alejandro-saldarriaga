@@ -4,142 +4,189 @@ HTML
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cristian Alejandro Saldarriaga - Portafolio Profesional</title>
+    <title>Cristian Alejandro Saldarriaga | Account Executive & SaaS B2B</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary: #1a365d;
+            --accent: #2b6cb0;
+            --bg: #f8fafc;
+            --text: #2d3748;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+        }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
             margin: 0;
             padding: 0;
-            background-color: #f4f6f9;
-            color: #333;
+            line-height: 1.6;
         }
         header {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%);
             color: white;
+            padding: 4rem 2rem;
             text-align: center;
-            padding: 50px 20px;
-        }
-        .profile-img {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid white;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            margin-bottom: 15px;
         }
         header h1 {
-            margin: 0;
-            font-size: 2.5em;
+            margin: 0 0 10px 0;
+            font-size: 2.2rem;
+            font-weight: 700;
         }
         header p {
-            font-size: 1.1em;
-            max-width: 800px;
-            margin: 20px auto 0;
-            line-height: 1.6;
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 650px;
+            margin: 0 auto;
         }
         .container {
             max-width: 900px;
-            margin: 40px auto;
+            margin: -30px auto 40px auto;
             padding: 0 20px;
         }
         .card {
-            background: white;
-            padding: 30px;
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2.5rem;
             margin-bottom: 25px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
         }
-        .card h2 {
-            color: #1e3c72;
+        h2 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 8px;
             margin-top: 0;
-            border-bottom: 2px solid #f0f0f0;
-            padding-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
-        .skills-list {
+        p {
+            text-align: justify;
+        }
+        blockquote {
+            background: #ebf8ff;
+            border-left: 4px solid var(--accent);
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #2b6cb0;
+            border-radius: 0 8px 8px 0;
+            text-align: left;
+        }
+        .skills-grid {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            list-style: none;
-            padding: 0;
+            margin-top: 15px;
         }
-        .skills-list li {
-            background: #e3f2fd;
-            color: #0d47a1;
-            padding: 8px 15px;
+        .skill-tag {
+            background: #edf2f7;
+            color: var(--primary);
+            padding: 6px 14px;
             border-radius: 20px;
-            font-weight: bold;
-            font-size: 0.9em;
+            font-size: 0.85rem;
+            font-weight: 600;
         }
-        .contact-btn {
-            display: inline-block;
+        .project-item {
+            margin-bottom: 20px;
+        }
+        .project-item h3 {
+            color: var(--accent);
+            margin: 0 0 5px 0;
+            font-size: 1.1rem;
+        }
+        .social-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .btn {
+            background: var(--primary);
             color: white;
-            padding: 12px 20px;
-            border-radius: 5px;
+            padding: 12px 25px;
+            border-radius: 8px;
             text-decoration: none;
-            font-weight: bold;
-            margin-top: 10px;
-            margin-right: 8px;
-            margin-bottom: 8px;
-            transition: opacity 0.3s;
+            font-weight: 600;
+            transition: background 0.3s;
+            display: inline-block;
         }
-        .contact-btn:hover {
-            opacity: 0.85;
+        .btn:hover {
+            background: var(--accent);
         }
         footer {
             text-align: center;
             padding: 20px;
-            color: #777;
-            font-size: 0.9em;
+            font-size: 0.85rem;
+            color: #718096;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="Cris (1).JPG" alt="Cristian Alejandro" class="profile-img">
-        <h1>Cristian Alejandro Saldarriaga</h1>
-        <p>Ayudo a las empresas de tecnología en Latinoamérica a escalar sus resultados a través de relaciones comerciales de confianza y procesos de venta consultiva que realmente aportan valor.</p>
+        <h1>Cristian Alejandro Saldarriaga Gómez</h1>
+        <p>Account Executive & Customer Success Manager | Expert in SaaS B2B, WhatsApp API & CRM</p>
     </header>
 
     <div class="container">
+        <!-- Sobre Mí -->
         <div class="card">
             <h2>Sobre mí y mi enfoque</h2>
-            <p>A lo largo de mi carrera, he acompañado todo el ciclo de negocio: desde la prospección, calificación y descubrimiento de necesidades como <strong>SDR</strong>, hasta la gestión de oportunidades, demostraciones estratégicas, negociación y cierre como <strong>Account Executive</strong>.</p>
-            <p>Tengo un sólido dominio técnico y comercial en soluciones de <strong>WhatsApp Business API, CRM, automatización y comunicación omnicanal</strong>, utilizando herramientas clave como HubSpot y Freshsales para la gestión del pipeline.</p>
-            <p><em>"Más que cerrar una venta, mi objetivo es generar conversaciones genuinas, construir puentes de confianza y transformar cada oportunidad en resultados de negocio duraderos."</em></p>
+            <p>Gran parte de mi sólida base técnica, comercial y de gestión estratégica la consolidé durante mis <strong>3 años y 9 meses de trayectoria en la plataforma SaaS Whaticket</strong>. Desde este rol, lideré y acompañé el ciclo comercial de punta a punta impulsando a empresas en toda <strong>Latinoamérica (LATAM)</strong> y con un fuerte enfoque en el mercado de <strong>España y Europa</strong>: desde la prospección estratégica, la calificación rigurosa y el <em>discovery</em> de necesidades, hasta la gestión avanzada de oportunidades, demostraciones de producto orientadas al valor, negociación y cierre.</p>
+            <p>Combino un profundo conocimiento en ecosistemas SaaS B2B, soluciones de WhatsApp Business API, automatización y comunicación omnicanal, utilizando herramientas clave como <strong>HubSpot</strong> y <strong>Freshsales</strong> para una gestión de <em>pipeline</em> limpia y predecible. Mi experiencia incluye haber gestionado carteras de 40 a 50 leads diarios, convirtiendo de manera constante entre 29 y 30 clientes mensuales y asegurando la retención mediante <em>Customer Success</em> proactivo.</p>
+            <blockquote>"Más que cerrar una venta, mi objetivo es generar conversaciones genuinas, construir puentes de confianza y transformar cada desafío tecnológico en resultados de negocio duraderos."</blockquote>
         </div>
 
+        <!-- Proyectos -->
+        <div class="card">
+            <h2>Proyectos Destacados (Whaticket)</h2>
+            <div class="project-item">
+                <h3>Inbound y Prospección Comercial</h3>
+                <p>Gestión integral de leads mediante Freshsales y HubSpot, identificando oportunidades con alto potencial de compra y acompañando al cliente con asesoría consultiva hasta el cierre en mercados internacionales.</p>
+            </div>
+            <div class="project-item">
+                <h3>Proyecto Wabot IA – Automatización Comercial</h3>
+                <p>Participación activa en la implementación y optimización de Wabot IA para el área de ventas, estructurando bases de conocimiento y respuestas automatizadas para agilizar la atención y elevar la precisión de las solicitudes comerciales.</p>
+            </div>
+            <div class="project-item">
+                <h3>Proyecto de Videos Tutoriales</h3>
+                <p>Creación de contenidos y videotutoriales prácticos sobre las principales funcionalidades de la plataforma, facilitando la curva de aprendizaje de los clientes, agilizando configuraciones y optimizando su experiencia de <em>onboarding</em>.</p>
+            </div>
+        </div>
+
+        <!-- Especialidades -->
         <div class="card">
             <h2>Especialidades</h2>
-            <ul class="skills-list">
-                <li>Ventas B2B & SaaS</li>
-                <li>Estrategia LATAM</li>
-                <li>Account Executive & SDR</li>
-                <li>Discovery & Consultative Selling</li>
-                <li>Pipeline Management</li>
-                <li>WhatsApp Business API</li>
-                <li>HubSpot & Freshsales</li>
-            </ul>
+            <div class="skills-grid">
+                <span class="skill-tag">Ventas B2B & SaaS</span>
+                <span class="skill-tag">Estrategia LATAM & España/Europa</span>
+                <span class="skill-tag">Account Executive & SDR</span>
+                <span class="skill-tag">Discovery & Consultative Selling</span>
+                <span class="skill-tag">Pipeline Management</span>
+                <span class="skill-tag">WhatsApp Business API</span>
+                <span class="skill-tag">HubSpot & Freshsales</span>
+                <span class="skill-tag">Kommo CRM</span>
+                <span class="skill-tag">Automatización de Procesos</span>
+                <span class="skill-tag">Onboarding & Churn Reduction</span>
+            </div>
         </div>
 
-        <div class="card">
+        <!-- Contacto -->
+        <div class="card" style="text-align: center;">
             <h2>Contacto Directo</h2>
-            <p>¿Quieres conectar, ver oportunidades de negocio o conversar sobre proyectos? ¡Escríbeme o conéctate conmigo en mis redes!</p>
-            
-            <!-- WhatsApp -->
-            <a href="https://wa.me/5513991298778" class="contact-btn" target="_blank" style="background: #25d366;">WhatsApp</a>
-            
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/cristian-alejandro-saldarriaga-gomez-a158912b1/" class="contact-btn" target="_blank" style="background: #0a66c2;">LinkedIn</a>
-            
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/cris_alejandro1992/" class="contact-btn" target="_blank" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);">Instagram</a>
+            <p style="text-align: center;">¿Quieres conectar, explorar oportunidades comerciales o conversar sobre proyectos en tecnología y ventas? ¡Escríbeme!</p>
+            <div class="social-buttons">
+                <a href="https://wa.me/5513991298778" class="btn" target="_blank">WhatsApp</a>
+                <a href="https://linkedin.com/in/cristian-alejandroa158912b1" class="btn" target="_blank">LinkedIn</a>
+            </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Cristian Alejandro Saldarriaga - Todos los derechos reservados.</p>
+        <p>&copy; 2026 Cristian Alejandro Saldarriaga Gómez. Todos los derechos reservados.</p>
     </footer>
 
 </body>
